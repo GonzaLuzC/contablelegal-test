@@ -8,14 +8,9 @@ Memoria de proyecto para Claude Code. Leé esto antes de tocar nada y respetalo 
 
 ## 1. Qué es este proyecto
 
-Clon **pixel-perfect** del sitio one-page `https://luzasesoramientocl.com.ar/`
-(WordPress + Elementor, consultora contable/legal de La Plata) convertido en un
-**sitio estático** servido en `https://NUEVO_DOMINIO/cont-leg-test/`.
+Clon **pixel-perfect** del sitio one-page `https://luzasesoramientocl.com.ar/` (WordPress + Elementor, consultora contable/legal de La Plata) convertido en un **sitio estático** servido en `https://NUEVO_DOMINIO/cont-leg-test/`.
 
-No es un rediseño ni una reconstrucción: se **espeja** el HTML/CSS/JS ya
-renderizado (incluidos assets de Elementor, fuentes e imágenes) y se reescriben
-las rutas. La única parte dinámica es el formulario de contacto, resuelto con un
-único endpoint PHP.
+No es un rediseño ni una reconstrucción: se **espeja** el HTML/CSS/JS ya renderizado (incluidos assets de Elementor, fuentes e imágenes) y se reescriben las rutas. La única parte dinámica es el formulario de contacto, resuelto con un único endpoint PHP.
 
 ---
 
@@ -120,14 +115,9 @@ Markup mínimo que el `<form>` debe tener:
 
 ## 7. Limpieza del espejado (qué quitar / qué conservar)
 
-**Quitar** del HTML espejado (sobra o rompe en estático): scripts de emojis de WP
-(`wp-emoji`), oEmbed, enlaces a `wp-json` / RSD / `generator`, prefetch a
-`admin-ajax`, integración del form con Elementor/`admin-ajax`, y toda referencia
-a `/wp-admin` o `/wp-login`.
+**Quitar** del HTML espejado (sobra o rompe en estático): scripts de emojis de WP (`wp-emoji`), oEmbed, enlaces a `wp-json` / RSD / `generator`, prefetch a `admin-ajax`, integración del form con Elementor/`admin-ajax`, y toda referencia a `/wp-admin` o `/wp-login`.
 
-**Conservar:** CSS y JS de Elementor (layout, sliders, animaciones, separadores)
-para no perder diseño ni breakpoints; el enlace de WhatsApp (`wa.me`); el footer
-(teléfonos y enlace a la casa matriz `luzconsulting.com.ar`).
+**Conservar:** CSS y JS de Elementor (layout, sliders, animaciones, separadores) para no perder diseño ni breakpoints; el enlace de WhatsApp (`wa.me`); el footer (teléfonos y enlace a la casa matriz `luzconsulting.com.ar`).
 
 ---
 
