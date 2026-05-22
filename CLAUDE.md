@@ -43,7 +43,7 @@ las rutas. La única parte dinámica es el formulario de contacto, resuelto con 
 
 ---
 
-## 4. Estructura del repositorio
+## 4. Estructura del repositorio 
 
 ```
 cont-leg-test/                  ← raíz del repo == carpeta servida en /cont-leg-test/
