@@ -1,0 +1,15 @@
+# Secretos del formulario (uno por entorno)
+/api/config.php
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+
+# Temporales del espejado
+/_mirror/
+
+# NO ignorar /vendor: se commitea para el deploy sin build.
+
+.env

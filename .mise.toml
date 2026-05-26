@@ -1,0 +1,21 @@
+[env]
+COMPOSE_PROJECT_NAME = "cont-leg-test"
+
+[tasks.setup]
+description = "Instala PHPMailer dentro del contenedor (genera vendor/)"
+run = "docker compose build web && docker compose run --rm web composer install"
+
+[tasks.dev]
+description = "Levanta el sitio en http://localhost:8080/cont-leg-test/"
+run = "docker compose up --build"
+
+[tasks.stop]
+description = "Detiene el entorno"
+run = "docker compose down"
+
+[tasks.logs]
+run = "docker compose logs -f web"
+
+[tasks.mail]
+description = "Abre la bandeja local (Mailpit)"
+run = "xdg-open http://localhost:8025 || open http://localhost:8025"

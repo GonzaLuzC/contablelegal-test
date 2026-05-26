@@ -1,0 +1,56 @@
+/* Contact Form Styles */
+.hp-field {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.form-status {
+    margin: 1rem 0 0;
+    padding: 0.85rem 1rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    line-height: 1.45;
+}
+.form-status--info {
+    background: #eef2f7;
+    color: #33414f;
+    border: 1px solid #d4dee8;
+}
+.form-status--success {
+    background: #e8f6ed;
+    color: #1f7a43;
+    border: 1px solid #bfe6cd;
+}
+.form-status--error {
+    background: #fdecec;
+    color: #b3261e;
+    border: 1px solid #f5c2c0;
+}
+
+/* Errores por campo */
+.field-error {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.8rem;
+    color: #b3261e;
+}
+.has-error {
+    border-color: #b3261e !important;
+    box-shadow: 0 0 0 1px #b3261e;
+}
+
+/* Botón mientras envía */
+.is-sending button[type="submit"],
+.is-sending [data-submit] {
+    opacity: 0.7;
+    cursor: progress;
+}
+
+/* Honeypot anti-spam: oculto a personas, visible a bots */
+.hp-field {
+    position: absolute !important;
+    left: -9999px !important;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
