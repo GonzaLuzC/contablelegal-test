@@ -1,0 +1,11 @@
+{
+  "name": "luz/cont-leg-test",
+  "description": "Endpoint de contacto (PHPMailer/SMTP)",
+  "require": {
+    "php": ">=8.3",
+    "phpmailer/phpmailer": "^6.9"
+  },
+  "config": {
+    "optimize-autoloader": true
+  }
+}
