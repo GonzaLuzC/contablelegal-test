@@ -1,0 +1,45 @@
+/* Contact Form Styles */
+.hp-field {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.form-status {
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-status--info {
+  background-color: #f0f4ff;
+  color: #4a5568;
+  border: 1px solid #c3dafe;
+}
+
+.form-status--success {
+  background-color: #f0fff4;
+  color: #276749;
+  border: 1px solid #9ae6b4;
+}
+
+.form-status--error {
+  background-color: #fff5f5;
+  color: #9b2c2c;
+  border: 1px solid #feb2b2;
+}
+
+.field-error {
+  display: block;
+  color: #e53e3e;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 5px;
+  min-height: 1em;
+}
+
+input.has-error,
+textarea.has-error {
+  border-color: #e53e3e !important;
+  outline-color: #e53e3e !important;
+}
