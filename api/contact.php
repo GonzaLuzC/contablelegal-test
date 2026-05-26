@@ -36,6 +36,7 @@ $mensaje  = trim((string)($_POST['mensaje']  ?? ''));
 $errores = [];
 if ($nombre === '')                             { $errores[] = 'nombre'; }
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) { $errores[] = 'email'; }
+if ($telefono === '' || !ctype_digit($telefono)) { $errores[] = 'telefono'; }
 if ($mensaje === '')                            { $errores[] = 'mensaje'; }
 
 if ($errores) {
